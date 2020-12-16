@@ -11,8 +11,8 @@ OUTPUT_PATH="/user/miro/output"
 $HADOOP_CMD jar $STREAM_JAR_PATH \
     -input $INPUT_FILE_PATH_1 \
     -output $OUTPUT_PATH \
-    -mapper "python map.py" \
-    -reducer "python red.py" \
+    -mapper "python mapper.py" \
+    -reducer "python reducer.py" \
     -file ./map.py \
     -file ./red.py
 
